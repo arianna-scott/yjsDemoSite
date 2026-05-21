@@ -1,0 +1,2 @@
+Demo Vid: using separate makeshift website that joins the same WebSocket room that MIT App Inventor server is in (by project ID that is currently hardcoded). Website can change component properties and delete (permanent) components and we can see those changes reflected in MIT App Inventor). Website also shows that all additions, removals, and changes on MIT App Inventor side are detected propertly.
+https://github.com/user-attachments/assets/478d58c8-3773-4c50-b998-ea4ddb1003a2.
