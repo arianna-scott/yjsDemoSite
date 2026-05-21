@@ -1,2 +1,7 @@
-Demo Vid: using separate makeshift website that joins the same WebSocket room that MIT App Inventor server is in (by project ID that is currently hardcoded). Website can change component properties and delete (permanent) components and we can see those changes reflected in MIT App Inventor). Website also shows that all additions, removals, and changes on MIT App Inventor side are detected propertly.
-https://github.com/user-attachments/assets/478d58c8-3773-4c50-b998-ea4ddb1003a2.
+Demo Vid: https://github.com/user-attachments/assets/478d58c8-3773-4c50-b998-ea4ddb1003a2.
+This is a separate website that joins the same WebSocket room that you MIT App Inventor server is in (by project ID). The project ID is currently hardcoded so you will have to change it to whatever your project ID is.
+
+This website can change component properties and delete (permanent) components and we can see those changes reflected in MIT App Inventor. This website also shows that all additions, removals, and changes made on MIT App Inventor side are being detected propertly (can see this in console logs). Note: you cannot add a component on this site and see it propagated in MIT App Inventor server because the website doesn’t know how to create UUID which is the key needed to add to the component Map. This shouldn’t be a problem once we have two mit app inventor servers.
+
+After downloading this code, to run the website, you will first need to separately start the websocket server. I installed these versions of Yjs and Y-Websocket: `npm install yjs@13.6.30 y-websocket@1.5.4`. Then run `HOST=localhost PORT=1234 npx y-websocket-server`. Then in a separate terminal to actually load this website, you can run `npm run dev`. Once the website loads, in the console, you should be able to see a message that says the provider is both connected and synced.
+
